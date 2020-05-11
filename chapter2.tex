@@ -1,11 +1,60 @@
 %===================================== CHAP 2 =================================
 
 \chapter{Literature Review} \label{chp:litterature} 
-This project's objective is to identify the underlying reason for the striking issue in LP in the CI. For the research to identifying this issue, this thesis looks at how the construction industry, or precisely how the LSB-project, makes use of agile project management methods and digital tools to aid project management. The CI's lust for digitalization is ever-present, and often projects consist of entire departments responsible for digitalization.
+This research's objective is to identify the baseline for the CI to utilize agile methodologies and digital tools, for then again, better the LP. For the research to identifying this baseline, this thesis looks at how the construction industry, or precisely how the LSB-project, makes use of agile project management methods and digital tools to aid project management. The CI's lust for digitalization is ever-present, and often projects consist of entire departments responsible for digitalization.
 
-First, the chapter takes a historical look at the CI and which factors made for the utilize of agile project management in the first place – what were the symptoms needed to be fixed?
+First, the chapter takes a historical look at the ICT-industry, and the CI and which factors made for the utilize of agile project management in the first place – what were the symptoms needed to be fixed? 
 
 Secondly, the chapter discusses organizational cooperation, where one looks at software as a tool aiding organizational interaction and interaction. Furthermore, the chapter gives a brief overview of a traditional CI project, as well as a short overview of different agile project management methods as a context for the project.
+
+\section{A Brief History of Software Engineering} \label{sec:ICT_history}
+Software engineering is considered one of the newer disciplines of engineering. From 1842, when Ada Lovelace first described the advantages of the Analytical Engine \cite{menabrea1842sketch}, up to the 1968 NATO Garmisch conference \cite{naur1969software}, computer science was not considered an engineering field at all. Back then, engineers found writing code a handcraft, done by the specialists, that could be applied in several disciplines of engineering. 
+
+By the 1950s, military initiatives had seen the need for some structure or process that could aid large-scale development. Because there was no standard procedures the industry suffered significant productivity issues. The process used back then is now known as the code-and-fix method. Problems using this method was: (a) products not hitting the needs of the user, (b) code that was barely readable, and (c) not testable. Also, producing software with a team was shown difficult because of a lack of documentation and inexperienced team members. 
+
+In 1956 H.D. Bennington wrote a paper \cite{benington1983production} proposes, among other things, an operational plan. The operational plan included nine phases to prepare a large system program, seen in figure \ref{fig:bennington}. The plan is considered the precursor of the waterfall model, introduced by W.W. Royce, with the his paper from 1970 \cite{royce}. What Royce is describing is a way of managing large-scale software development within both cost and time. The Waterfall has since become the dominant software development method used in the industry. The problems both Bennington and Royce saw was the need for process management. The reason for the need for process management was that programs did not meet cost- and time schedule, as well as requirements set. The industry suffered major productivity issues. The resulting product did not meet the expectation of the user, and the requirements needed to be modified, or the development process had to return to the origin. The issues had the source of poorly designed and documented requirements. The need for documentation and requirement specification features that come in to play in more complex software developments, because one could not see the bigger picture when the complexity of the program increased to a certain level.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.55\textwidth]{fig/bennington-production-of-large-scale-programs.png}
+    \caption{Production of a large-program system as presented of Bennington in 1956.}
+    \label{fig:bennington}
+\end{figure}
+
+Further, one wanted to make sure that the code written was performing as intended, which introduced the need for testing. The waterfall model, presented by Royce, seen in figure \ref{fig:royce}, has some modifications to Bennington's Program production, but one can identify notable similarities between the two. A feature for them both is that, to some extent, they proclaim the use of an iterative design process, which has shown to be forgotten in recent years, using the waterfall model. Royce shows the prototype in a illustration, seen in figure \ref{fig:royce-prototype}, while in Bennington's paper the iteration is not mentioned, but he does indicate the use of iterations in the later applied foreword.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/royce-waterfall.png}
+    \caption{Waterfall method as proposed by Royce in 1970. Visualizing implementation steps to develop a large computer program for delivery to a customer.}
+    \label{fig:royce}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/royce-waterfall-prototype.png}
+    \caption{Waterfall method as proposed by Royce in 1970, including an iterative process using prototype. Attempting to do the job twice - the first result provides an early simulation of the final product.}
+    \label{fig:royce-prototype}
+\end{figure}
+
+In 1987 Barry W. Bohem wrote a paper comparing three papers from the past, with how the software industry treats process management of the time. The papers compared includes both Royce's and Bennington's paper. Bohem starts the paper with a quote: 
+\begin{quote}
+    \textit{"Those who cannot remember the past are condemned to repeat it."} - George Santayana
+\end{quote}
+Even after Royce, the industry still struggled with requirements, documentation, staffing, and testing. Following the process, but forgetting the details resulting in some of the same problems previously recorded, thus the Santayana quote. An interesting detail is Bohem's discovery of the lack of prototyping and iteration, in the interpretation and use of the waterfall model; though both Royce and Bennington promote prototyping in the design phase 
+\begin{quote}
+    \textit{"Thou shalt not write one line of code until every detailed design specification is completed."} - Software Developer 
+\end{quote}
+The industry, entering the 90s and the 21 century, had a set of structures, processes, and models. Furthermore, it had become a known and highly valued field of engineering. Still, the discussion of productivity- and efficiency was present \cite{boehm1987improving}. Large software developments failed to deliver at the time and cost initially planned, sometimes failing to deliver at all.  Some of the repeating problems were: (1) the initial requirements often changed during the development process: forcing the development going back to the origin, costing both time and money; (2) the need of project management during a stage of the process: making sure developers working in parallel being exploited at an accepted level, and knowing what to implement at all times. The process models, such as Waterfall, structure the order of stages, and when to proceed to the next stage, while process methods are more concerned about guidance through each phase. Thus the need for software management methods was present and the introduction of Agile Development as a means to overcome, among others, the two problems mentioned. 
+
+One can argue that productivity is an ever fighting battle, but after the introduction of agile development, productivity is shown to have a definite increase in Norwegian ICT-industry. Looking at figure \ref{fig:ICT_BA_1972}, comparing ICT and CI, the difference is substantial. Yes, the productivity of CI is not good, but a productivity gain of 478,9\% from 1972 until 2017 is to be considered satisfactory. One can see a big leap from the middle of the 90s. Using LP measuring how a industry is discussed later in this chapter.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{fig/ICT_BA_1972.png}
+    \caption{Labor productivity; ICT and CI compared from 1972 up to 2017.}
+    \label{fig:ICT_BA_1972}
+\end{figure}
 
 \section{Construction Engineering}
 This section will introduce the CI as a context for the project, as well som implications and motivation forcing a change in the way CI-projects are managed. 
