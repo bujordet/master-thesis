@@ -225,7 +225,7 @@ Systemizing could help digest explicit knowledge because sometimes the informati
 Boundary Objects, introduced in the original paper \cite{star&griesemer}, is a helpful tool when looking at complex situations. Defining objects where actors cooperate and exchange tacit- and explicit knowledge. A boundary object is part of the social world and is, in some way, a facilitator for communication between actors. Star and Greisemer argue that it has to be well-defined, as well as fluid, such that it can both adapt and maintain a collective identity between parties. An example in an engineering project would be documentation or a user manual, which contains explicit knowledge for different parties to share. Furthermore, a stand-up meeting in Lean Construction is a boundary object which emphasizes tacit knowledge sharing.
 
 \subsection{Computer-Supported Cooperative Work}
-Computer-Supported Cooperative Work, first defined by \cite{Friedman}, is the theory of the technology's role in the work environment. Often considered in the same context is groupware. The artical \textit{Computer-supported cooperative work: history and focus} \cite{Grudin} describe the motivation for groupware: 
+Computer-Supported Cooperative Work, first defined by \cite{Friedman}, is the theory of the technology's role in the work environment. Often considered in the same context is groupware. The article \textit{Computer-supported cooperative work: history and focus} \cite{Grudin} describe the motivation for groupware: 
 \begin{quotation}
     \noindent \textit{"The complexity of managing large government software contracts provided further incentive to apply technology to group work."} - Jonathan Grundin
 \end{quotation}
@@ -233,13 +233,34 @@ This motivation applies to Software development as much as for CI. Software and 
 
 Groupware has been an essential part of collaborative work, but what makes good groupware? 
 
-TTo make groupware work, first, it needs to meet the needs and requirements of the group \cite{subramanyam2010user}. When the software is thoroughly developed and tested to meet the requirements, one can argue that the software should work. Still, after a proper software development process, the critical implementation phase begins. Implementing new software has to fit the users. The article \textit{Transforming Work Through Information Technology} by \cite{Robey&Sahay}, describes how the deployment of new groupware in two different counties, ends in two different experiences. Central in the succeeding county, is knowledge sharing and grooming of users beforehand. They were conducting the implementation of the software in a bottom-up manner. In this case, the users were the ones who initiated the deployment. In the other county, who did not succeed, initiating the implementation was a centralized data processing department. As well, the knowledge had to be thought through manuals and learning by doing. Bratteteig and Wagner suggest using user participation and suggesting a partial implementation of new groupware; thus, the people already knowing the software can function as super-users guiding the rest of the organization \cite{bratteteig2016unpacking}.
+To make groupware work, first, it needs to meet the needs and requirements of the group \cite{subramanyam2010user}. When the software is thoroughly developed and tested to meet the requirements, one can argue that the software should work. Still, after a proper software development process, the critical implementation phase begins. Implementing new software has to fit the users. The article \textit{Transforming Work Through Information Technology} by \cite{Robey&Sahay}, describes how the deployment of new groupware in two different counties, ends in two different experiences. Central in the succeeding county, is knowledge sharing and grooming of users beforehand. They were conducting the implementation of the software in a bottom-up manner. In this case, the users were the ones who initiated the deployment. In the other county, who did not succeed, initiating the implementation was a centralized data processing department. As well, the knowledge had to be thought through manuals and learning by doing. Bratteteig and Wagner suggest using user participation and suggesting a partial implementation of new groupware; thus, the people already knowing the software can function as super-users guiding the rest of the organization \cite{bratteteig2016unpacking}.
 
 A challenge in doing a partial implementation, suggested by Bratteteig \& Wagner, is that people do not want to take part or use unless there is already a sizable group of people participating \cite{grudin1989groupware}. This phenomenon called the "critical mass"-problem and is known in communication systems and other CSCW systems with similar characteristics. This problem causes a barrier in starting up the usage \cite{markus1987toward}. 
 
-Moreover, implementing new digital tools can hamper with the way of working, causing new jobs to be made, such as the case in introducing BIM. On the other end, jobs might be lost. Thus, the help of unions in developing is beneficial \cite{ehn1993scandinavian}. Implementing a new tool into an organization is, thus, not always straight forward. There is a difference between making people adapt to a new tool, or make the tool custom to the group. Sometimes, the best way is reorganizing around a new tool \cite{hammer1990reengineering}. 
+Moreover, implementing new digital tools can hamper with the way of working, causing new jobs to be made, such as the case in introducing BIM. On the other end, jobs might be lost. Thus, the help of unions in developing is beneficial \cite{ehn1993scandinavian}. Implementing a new tool into an organization is, thus, not always straight forward. There is a difference between making people adapt to a new tool, or make the tool custom to the group. Sometimes, the best way is reorganizing around a new tool \cite{hammer1990reengineering}.  
 
-In the end, to be highly successful, when fulfilled all other terms, the application has to be usable. The software could still work, but often a lot of knowledge is needed to understand the technology, if not emphasizing on high usability. 
+Also, a new tool is challenging due to the way the users have to interact with a new tool, going from a way of working, with knowledge from either prior software or other tools. Thus, the way people react to the new tool has to do with prior experience \cite{orlikowski1992learning}. Hence, bottom-up implementation is beneficial. 
+
+In the end, to be highly successful, when fulfilled all other terms, the application has to meet a set of rules of usability. The software could still work, but often much knowledge is needed to understand the technology, if not emphasizing high usability. Jacob Nielsen defined a set of tensability heuristics, listed in table \ref{tab:usability-heuristics}.
+
+\begin{table}[h]
+    \begin{tabular}{lp{0.295\textwidth}p{0.543\textwidth}}
+        \toprule
+        \textbf{Code} & \textbf{Usability Heuristic} & \textbf{Description} \\ \midrule
+        1 & Visibility of system status             & The system should always show provide information of what going on in the software, for the user                         \\
+        2 & Match between system and the real world & Use the user's language. Concepts, words, and way of visualization that is known to the user                             \\
+        3    & User control and freedom                                & Let the user have control. For example, implement "undo" at all levels \\
+        4 & Consistency and standards               & Consistency in the interface, follow the guidelines of the platform in use (Mobile, mac, windows etc.).                  \\
+        5    & Error prevention                                        & Design the system to minimize errors                                   \\
+        6 & Recognition rather than recall          & The user should not need to remember information between different dialogues. Instructions should be visible when needed \\
+        7 & Flexibility and efficiency of use       & The user should be able to use the software to its level of knowledge. For example, provide shortcuts to advanced users  \\
+        8    & Aesthetic and minimalist design                         & Remove what has no purpose                                             \\
+        9    & Help users recognize, diagnose, and recover from errors & Help the user if error occurs                                          \\
+        10   & Help and documentation                                  & Provide an effective system of help                                    \\ \bottomrule
+    \end{tabular}
+    \caption{Jacob Nielsen's ten usability heuristics}
+    \label{tab:usability-heuristics}
+\end{table}
 
 \subsection{Contracts in the Construction Industry}
 This section will give an introduction to issues concerning contracts in the CI. First, a short introduction to contracts in the CI, as a context for the project. 
