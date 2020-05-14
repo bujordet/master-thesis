@@ -9,14 +9,26 @@
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{pdflscape}
-
+\usepackage{natbib}
 \usepackage[Lenny]{fncychap}
 \usepackage[pdftex,bookmarks=true]{hyperref}
 \usepackage[pdftex]{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english, norsk]{babel}
+\geometry{b5paper}
+
+\newcommand{\thesisAuthor}{Morten Bujordet}
+\newcommand{\thesisTitle}{Utilizing Digital and Methodical Potential in Construction projects:}
+\newcommand{\thesisSubTitle}{A Case Study of a Lean and Digital Construction Project}
+\newcommand{\thesisType}{master project}
+\newcommand{\thesisDate}{spring 2020}
+
+% PDF info
 \hypersetup{
+    pdfauthor={\thesisAuthor},%
+    pdfsubject={\thesisType},%
+    pdftitle={\thesisTitle, \thesisSubTitle},%
     colorlinks,%
     citecolor=black,%
     filecolor=black,%
@@ -39,7 +51,6 @@
 \setlength{\parskip}{1.3em}
 \setlength{\parindent}{15pt}
 
-
 % ShareLaTeX does not support glossaries now. Sorry...
 %\usepackage[number=none]{glossary}
 %\makeglossary
@@ -59,3 +70,6 @@
 \renewcommand{\headrulewidth}{0.1ex}
 \renewcommand{\footrulewidth}{0.1ex}
 \fancypagestyle{plain}{\fancyhf{}\fancyfoot[LE,RO]{\thepage}\renewcommand{\headrulewidth}{0ex}}
+
+\bibliographystyle{apalike}
+\bibpunct{[}{]}{;}{a}{,}{,}
